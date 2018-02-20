@@ -1,0 +1,14 @@
+---
+#Watchdog configuration file
+#Edit with care. Do not change anything unless you know what you are doing.
+
+#Watchdog default language
+language: en
+#max-caps is the amount of the caps can be used by player
+max-caps: 3
+#options
+#Set to true to enable broadcast when player overused caps, set to false to disable
+broadcast:
+   enable: true
+   message: "{PLAYER} overused uppercase!"
+...

@@ -1,0 +1,9 @@
+---
+#Watchdog language file
+
+language:
+    name: English
+    id: en
+message:
+    protected: This server is PROTECTED
+...
