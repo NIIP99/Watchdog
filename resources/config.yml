@@ -4,11 +4,31 @@
 
 #Watchdog default language
 language: en
-#max-caps is the amount of the caps can be used by player
-max-caps: 3
-#options
-#Set to true to enable broadcast when player overused caps, set to false to disable
-broadcast:
-   enable: true
-   message: "{PLAYER} overused uppercase!"
+
+#Global Cheat Index (GCI) is used to determine if a player cheats
+#Scale: 0.0 (less likely cheating) to 10.0 (most likely cheating)
+globalCheatIndex: 6.0
+
+#Determine computing power plan used by Watchdog
+#Scale: 1 (Best performance, reduce performance impacts to server when possible)
+#       2 (Balanced, automatically adjust to optimum power usage)
+#       3 (Best protection, may result in reduced performance if server has low-end hardware)
+powerAllocation: 2
+
+#Cheat mechanism listed here will be activated
+mechanism:
+    movement:
+        fly: enable
+        speed: enable
+    network:
+        vpn: enable
+        account_spam: enable
+    chat:
+        spam: enable
+        swear: disable
+        advertising: enable
+    game:
+        xray: enable
+        
+    
 ...
